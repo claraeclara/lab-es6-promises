@@ -114,27 +114,13 @@ async function makeBroccoli() {
 makeBroccoli();
 
 // Bonus 2 - Promise all
-const p0 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 0));
-});
-const p1 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 1));
-});
-const p2 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 2));
-});
-const p3 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 3));
-});
-const p4 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 4));
-});
-const p5 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 5));
-});
-const p6 = new Promise((resolve, reject) => {
-  resolve(obtainInstruction("brusselsSprouts", 6));
-});
+const p0 = obtainInstruction("brusselsSprouts", 0);
+const p1 = obtainInstruction("brusselsSprouts", 1);
+const p2 = obtainInstruction("brusselsSprouts", 2);
+const p3 = obtainInstruction("brusselsSprouts", 3);
+const p4 = obtainInstruction("brusselsSprouts", 4);
+const p5 = obtainInstruction("brusselsSprouts", 5);
+const p6 = obtainInstruction("brusselsSprouts", 6);
 
 Promise.all([p0, p1, p2, p3, p4, p5, p6])
   .then((valuesArr) => {
