@@ -128,8 +128,8 @@ Promise.all([p0, p1, p2, p3, p4, p5, p6])
       document.querySelector(
         "#brusselsSprouts"
       ).innerHTML += `<li>${step}</li>`;
-      document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
     });
+    document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
     document.querySelector("#brusselsSprouts").innerHTML +=
       "<li>Brussels sprouts are ready!</li>";
   })
